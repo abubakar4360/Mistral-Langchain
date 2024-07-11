@@ -73,7 +73,7 @@ def get_response(question, tokenizer, model, memory):
     if matches:
         response = matches[-1].strip()
 
-    print(response)
+    print('Response: ',response)
     memory.chat_memory.add_ai_message(response)
     return response
 
